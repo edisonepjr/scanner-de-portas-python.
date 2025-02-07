@@ -1,32 +1,29 @@
-import socket  # Importa a biblioteca de sockets do Python para realizar a conexão
+import socket
 
-def scan_port(host, port):
-    """
-    Função que verifica se uma porta está aberta no host especificado.
-    :param host: Endereço IP ou domínio do host.
-    :param port: Número da porta a ser verificada.
-    :return: True se a porta estiver aberta, False se estiver fechada.
-    """
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Cria um objeto de socket para IPv4 e TCP
-    s.settimeout(1)  # Define um tempo limite de 1 segundo para a tentativa de conexão
-    result = s.connect_ex((host, port))  # Tenta conectar à porta do host
-    s.close()  # Fecha o socket após a tentativa
-    return result == 0  # Se o código de retorno for 0, a porta está aberta
-
-def main():
-    """
-    Função principal que pede o endereço IP e escaneia as portas do host.
-    """
-    host = input("Digite o endereço IP ou domínio do host: ")  # Solicita o IP ou domínio do usuário
-    portas = [21, 22, 23, 25, 53, 80, 110, 443, 8080]  # Lista de portas comuns a serem escaneadas
-    print(f"Escaneando host {host}...\n")
-    
-    # Para cada porta na lista, verifica se está aberta ou fechada
-    for port in portas:
-        if scan_port(host, port):
-            print(f"Porta {port} está ABERTA.")
+# Função para escanear um intervalo de portas
+def scanner_portas(ip, portas):
+    for porta in portas:
+        # Tenta conectar à porta
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        socket.setdefaulttimeout(1)
+        resultado = s.connect_ex((ip, porta))
+        if resultado == 0:
+            print(f"Porta {porta} está ABERTA")
         else:
-            print(f"Porta {port} está FECHADA.")
+            print(f"Porta {porta} está FECHADA")
+        s.close()
 
+# Função principal
+def main():
+    ip = input("Digite o IP ou domínio para escanear: ")
+    
+    # Escaneando um intervalo de portas comuns
+    portas_comuns = [21, 22, 23, 25, 53, 80, 443, 8080]
+    print(f"Iniciando escaneamento nas portas {portas_comuns} do host {ip}...\n")
+    
+    # Chama a função para escanear
+    scanner_portas(ip, portas_comuns)
+
+# Executando o script
 if __name__ == "__main__":
-    main()  # Chama a função principal para iniciar o script
+    main()
