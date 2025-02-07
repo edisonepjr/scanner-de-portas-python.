@@ -19,8 +19,8 @@ def escanear_porta(ip, porta, arquivo_log):
     except Exception as e:
         print(f"Erro ao escanear a porta {porta}: {e}")
 
-# Função principal
-def main():
+# Função para iniciar o escaneamento
+def iniciar_scanner():
     ip = input("Digite o IP ou domínio para escanear: ")
     porta_inicial = int(input("Digite a porta inicial: "))
     porta_final = int(input("Digite a porta final: "))
@@ -30,18 +30,44 @@ def main():
     with open("resultado.txt", "w") as arquivo_log:
         threads = []
 
-        # Criando uma thread para cada porta
         for porta in range(porta_inicial, porta_final + 1):
             thread = threading.Thread(target=escanear_porta, args=(ip, porta, arquivo_log))
             threads.append(thread)
             thread.start()
 
-        # Aguarda todas as threads terminarem
         for thread in threads:
             thread.join()
 
     print("\nEscaneamento concluído! Os resultados foram salvos em 'resultado.txt'.")
 
-# Executando o script
+# Função para exibir os resultados salvos
+def ler_resultados():
+    try:
+        with open("resultado.txt", "r") as arquivo:
+            print("\nResultados do último escaneamento:\n")
+            print(arquivo.read())
+    except FileNotFoundError:
+        print("\nNenhum escaneamento foi realizado ainda.")
+
+# Menu interativo
+def menu():
+    while True:
+        print("\n===== Scanner de Portas =====")
+        print("1 - Iniciar escaneamento")
+        print("2 - Ler resultados salvos")
+        print("3 - Sair")
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "1":
+            iniciar_scanner()
+        elif opcao == "2":
+            ler_resultados()
+        elif opcao == "3":
+            print("Saindo...")
+            break
+        else:
+            print("Opção inválida! Tente novamente.")
+
+# Executando o menu
 if __name__ == "__main__":
-    main()
+    menu()
