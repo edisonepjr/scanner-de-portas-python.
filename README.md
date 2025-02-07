@@ -1,51 +1,47 @@
-<h1>Scanner de Portas Python</h1>
+<h1 align="center">🔍 Scanner de Portas Python</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=python&message=linguagem&color=blue&style=for-the-badge&logo=python"/>
+  <img src="https://img.shields.io/static/v1?label=Python&message=3.x&color=blue&style=for-the-badge&logo=python"/>
   <img src="https://img.shields.io/static/v1?label=Status&message=Em%20Desenvolvimento&color=red&style=for-the-badge"/>
-  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
+  <img src="https://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
+  <img src="https://img.shields.io/github/stars/edisonepjr/scanner-de-portas-python?style=social"/>
 </p>
 
-> Status do Projeto: :heavy_check_mark: Em Desenvolvimento
+> Status do Projeto: 🚧 **Em Desenvolvimento**
 
-### Tópicos
+---
 
-:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)  
-:small_blue_diamond: [Funcionalidades](#funcionalidades)  
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação)  
-:small_blue_diamond: [Casos de Uso](#casos-de-uso)  
-:small_blue_diamond: [Tecnologias utilizadas](#tecnologias-utilizadas)  
-:small_blue_diamond: [Desenvolvedores/Contribuintes](#desenvolvedorescontribuintes)  
-:small_blue_diamond: [Licença](#licença)
+## 📌 **Índice**  
 
-## Descrição do projeto
+- [Sobre o Projeto](#sobre-o-projeto)  
+- [Casos de Uso](#casos-de-uso)  
+- [Funcionalidades](#funcionalidades)  
+- [Demonstração](#demonstração)  
+- [Pré-requisitos](#pré-requisitos)  
+- [Instalação e Uso](#instalação-e-uso)  
+- [Contribuição](#contribuição)  
+- [Licença](#licença)  
 
-<p align="justify">
-  O **Scanner de Portas Python** é uma ferramenta de código aberto, desenvolvida em Python, para realizar a verificação de portas de rede em dispositivos e servidores. O script realiza a análise de segurança da rede, permitindo verificar se as portas estão abertas ou fechadas, o que pode ser útil para auditorias de segurança em servidores.
-</p>
+---
 
-## Funcionalidades
+## 📖 **Sobre o Projeto**  
 
-:heavy_check_mark: Verifica as portas mais comuns em um servidor ou dispositivo.  
-:heavy_check_mark: Identifica se as portas estão abertas ou fechadas.  
-:heavy_check_mark: Suporte a execução via linha de comando com IP ou domínio.  
-:heavy_check_mark: Fácil de usar, sem necessidade de dependências externas além do Python.
+O **Scanner de Portas Python** é uma ferramenta desenvolvida para auxiliar profissionais de segurança cibernética, administradores de redes e entusiastas da tecnologia na verificação de portas abertas em um determinado host.  
 
-## Layout ou Deploy da Aplicação :dash:
+Através do uso da biblioteca **socket**, este scanner realiza verificações eficientes para identificar serviços ativos, ajudando na detecção de vulnerabilidades e no monitoramento de redes.
 
-> Link do deploy da aplicação: Não disponível ainda, mas em breve será possível rodar diretamente no GitHub Pages ou via um servidor dedicado.
+🔹 **Tecnologia principal:** Python  
+🔹 **Foco:** Segurança cibernética e monitoramento de rede  
+🔹 **Tipo:** Ferramenta CLI (Command Line Interface)  
 
-![Imagem do projeto](https://via.placeholder.com/600x300)  
+---
 
-## Pré-requisitos
+## 🎯 **Casos de Uso**  
 
-:warning: [Python 3.x](https://www.python.org/downloads/)
+🔹 **Caso 1: Análise de Segurança em um Servidor Local**  
+📌 **Usuário:** Administrador de Rede  
+📌 **Objetivo:** Identificar portas abertas em um servidor dentro da rede local  
 
-Certifique-se de ter o Python 3.x instalado na sua máquina antes de rodar o script.
-
-## Como rodar a aplicação :arrow_forward:
-
-1. Clone o repositório:
-
+**Exemplo de uso:**  
 ```bash
-git clone https://github.com/edisonepjr/scanner-de-portas-python.git
+python scanner_portas.py 192.168.1.1
