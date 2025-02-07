@@ -1,15 +1,33 @@
-# Scanner de Portas em Python
+# **Scanner de Portas Python**
 
-Este projeto é um simples script em Python para escanear portas de um host (IP ou domínio) e verificar se estão abertas ou fechadas.
+**Descrição**:  
+O **Scanner de Portas Python** é uma ferramenta de código aberto que permite verificar a disponibilidade e o status de portas de rede em um dispositivo ou servidor. O script é escrito em Python e foi desenvolvido para ajudar na análise de segurança de redes locais ou públicas, facilitando a detecção de portas abertas, fechadas ou com possíveis vulnerabilidades.
 
-## Funcionalidades
-- Escaneia portas comuns (FTP, SSH, Telnet, HTTP, HTTPS, etc.).
-- Exibe o status de cada porta (Aberta ou Fechada).
-- Permite escanear um intervalo de portas.
+---
 
-## Como Usar
-1. Clone este repositório para sua máquina local.
-2. No terminal, navegue até o diretório onde o arquivo `scanner_portas.py` está localizado.
-3. Execute o script:
+## **Tabela de Conteúdos**  
+
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Como Usar](#como-usar)
+- [Exemplo de Uso](#exemplo-de-uso)
+- [Contribuições](#contribuições)
+- [Licença](#licença)
+
+---
+
+## **Tecnologias Utilizadas**
+
+- **Python 3.x**
+- **Sockets** (para realizar a comunicação com as portas)
+- **OS** (para operações relacionadas ao sistema operacional)
+
+---
+
+## **Instalação**
+
+1. **Clonar o Repositório**  
+   Para começar a usar o **Scanner de Portas Python**, clone este repositório em seu ambiente local:
+
    ```bash
-   python scanner_portas.py
+   git clone https://github.com/edisonepjr/scanner-de-portas-python.git
