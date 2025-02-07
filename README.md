@@ -45,3 +45,25 @@ Através do uso da biblioteca **socket**, este scanner realiza verificações ef
 **Exemplo de uso:**  
 ```bash
 python scanner_portas.py 192.168.1.1
+
+Saída esperada:
+
+[+] 80 (HTTP) - Aberta
+[+] 443 (HTTPS) - Aberta
+[-] 22 (SSH) - Fechada
+
+---
+
+🔹 Caso 2: Auditoria de um site público
+
+📌 Usuário: Especialista em segurança cibernética
+📌 Objetivo: Identificar quais serviços estão rodando em um site público
+📌 Exemplo de uso:
+
+python scanner_portas.py example.com
+
+Saída esperada:
+
+[+] 80 (HTTP) - Aberta
+[+] 443 (HTTPS) - Aberta
+[-] 3306 (MySQL) - Fechada
