@@ -122,6 +122,5 @@ Sinta-se à vontade para contribuir com melhorias ou novas funcionalidades! Bast
 ## 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-```Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-```
+
 
