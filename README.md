@@ -67,3 +67,60 @@ Saída esperada:
 [+] 80 (HTTP) - Aberta
 [+] 443 (HTTPS) - Aberta
 [-] 3306 (MySQL) - Fechada
+
+## 🔧 Funcionalidades
+
+- Verificação de portas abertas
+- Identificação de serviços ativos
+- Relatórios detalhados de auditoria
+
+---
+
+## 💻 Demonstração
+
+![Demonstração](https://link-para-a-imagem-da-demonstracao.com)
+
+---
+
+## 📋 Pré-requisitos
+
+- Python 3.x
+
+---
+
+## 🚀 Instalação e Uso
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/edisonepjr/scanner-de-portas-python.git
+   ```
+
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd scanner-de-portas-python
+   ```
+
+3. Execute o script:
+   ```bash
+   python scanner_portas.py <endereço IP ou domínio>
+   ```
+
+---
+
+## 🤝 Contribuição
+
+Sinta-se à vontade para contribuir com melhorias ou novas funcionalidades! Basta seguir os passos abaixo:
+
+1. Faça um fork do projeto
+2. Crie uma nova branch (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+```
+
