@@ -67,8 +67,7 @@ Saída esperada:
 [+] 80 (HTTP) - Aberta
 [+] 443 (HTTPS) - Aberta
 [-] 3306 (MySQL) - Fechada
-
----
+```
 ## 🔧 Funcionalidades
 
 - Verificação de portas abertas
@@ -94,7 +93,7 @@ Saída esperada:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/edisonepjr/scanner-de-portas-python.git
-   ```
+   
 
 2. Navegue até o diretório do projeto:
    ```bash
