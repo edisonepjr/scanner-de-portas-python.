@@ -1,6 +1,4 @@
-Claro, aqui está o README.md completo, sem retirar nada:
 
-### README.md
 
 ```markdown
 # 🔍 Scanner de Portas Python
