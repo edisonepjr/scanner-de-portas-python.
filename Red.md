@@ -1,6 +1,3 @@
-
-
-```markdown
 # 🔍 Scanner de Portas Python
 
 <p align="center">
@@ -48,7 +45,6 @@ Através do uso da biblioteca **socket**, este scanner realiza verificações ef
 **Exemplo de uso:**  
 ```bash
 python scanner_portas.py 192.168.1.1
-```
 
 🔹 **Caso 2: Auditoria de um Site Público**  
 📌 **Usuário:** Especialista em Segurança Cibernética  
