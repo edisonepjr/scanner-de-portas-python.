@@ -68,7 +68,7 @@ Saída esperada:
 [+] 443 (HTTPS) - Aberta
 [-] 3306 (MySQL) - Fechada
 
-
+---
 ## 🔧 Funcionalidades
 
 - Verificação de portas abertas
